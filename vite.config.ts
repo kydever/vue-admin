@@ -1,4 +1,4 @@
-import { UserConfigExport, ConfigEnv } from 'vite'
+import { ConfigEnv, UserConfigExport } from 'vite'
 import { viteMockServe } from 'vite-plugin-mock'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
@@ -47,8 +47,7 @@ export default ({ command }: ConfigEnv): UserConfigExport => {
           manualChunks(id) {
             if (id.includes('node_modules')) {
               const path = id.toString().split('node_modules/')[1]
-              const name = path.split('/')[0].toString()
-              return name
+              return path.split('/')[0].toString()
             }
           }
         }
