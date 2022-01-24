@@ -4,8 +4,8 @@
   "license": "MIT",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
-    "serve": "vite --host",
+    "dev": "vite --host 0.0.0.0",
+    "serve": "vite --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite preview",
     "cz": "git cz",
