@@ -1,4 +1,5 @@
 <template>
+  <HelloWorld msg="Hello World" />
   <el-row>
     <el-col :span="24">
       asdasdasdasdasd
@@ -12,10 +13,13 @@ import { ElRow, ElCol } from 'element-plus'
 import { random } from 'lodash-es'
 import dayjs from 'dayjs'
 import soulSoother from '@/assets/typings/home'
+import { HelloWorld } from '@kydev/vue3-component'
+
 export default defineComponent({
   components: {
     ElRow,
-    ElCol
+    ElCol,
+    HelloWorld
   },
   setup() {
     // 首页心灵鸡汤
