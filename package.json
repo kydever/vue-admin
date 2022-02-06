@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^0.2.4",
-    "@kydev/vue3-component": "^1.0",
+    "@kydev/vue3-component": "^1.1",
     "axios": "^0.21.1",
     "dayjs": "^1.10.6",
     "echarts": "^5.2.2",
